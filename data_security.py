@@ -18,7 +18,8 @@ import torch.nn.functional as F
 
 # Function to load data
 def dataloader(train_dataset, test_dataset):
-    batch_size = 50  # Batch size for training
+    batch_size = 50 
+    # Batch size for training
     # DataLoader for training (centralized, using all data)
     train_loader = DataLoader(
         dataset=train_dataset,
